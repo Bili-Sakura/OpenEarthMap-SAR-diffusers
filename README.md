@@ -1,8 +1,8 @@
 <div align="center">
 	
-## OpenEarthMap Synthetic Aperture Radar (OpenEarthMap-SAR) Dataset 
+## OpenEarthMap Synthetic Aperture Radar Dataset 
 <p align="justify">
-This repository contains the baseline models for the <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap Synthetic Aperture Radar</a> benchmark dataset land cover mapping under all-weather conditions. The motivation is to facilitate advancements in SAR-based geospatial analysis for global high-resolution land cover mapping.
+This repository contains the baseline models for the <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap Synthetic Aperture Radar</a> (OpenEarthMap-SAR) benchmark dataset land cover mapping under all-weather conditions. The motivation is to facilitate advancements in SAR-based geospatial analysis for global high-resolution land cover mapping.
 </p> 
 <p><img src="docs/examples-min.png"></p>
 </div>
