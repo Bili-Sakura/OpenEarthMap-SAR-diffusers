@@ -34,7 +34,7 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
 <div align="justify">
 The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="">here</a>.
 
-#### Semantic Segmentation Task
+### Semantic Segmentation Task
 <table align="center">
     <!-- U-Net Optical -->
     <tr align="center">
@@ -247,10 +247,10 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
 </table>
 
-#### UDA Semantic Segmentation Task
+### UDA Semantic Segmentation Task
 
 
-#### Image Translation Task
+### Image Translation Task
 
 
 <!-- with different SSL methods are provided as follows (13 bands of S2-L1C, 100 epochs, input clip to [0,1] by dividing 10000).
