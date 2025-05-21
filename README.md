@@ -2,9 +2,9 @@
 	
 ## OpenEarthMap Synthetic Aperture Radar Dataset 
 <p align="justify">
-This repository contains baseline models for <a href="https://arxiv.org/abs/2501.10891v2" style="text-decoration: none;">OpenEarthMap Synthetic Aperture Radar</a> (OpenEarthMap-SAR) benchmark dataset for land cover mapping under all-weather conditions. The motivation of this benchmark dataset is to facilitate advancements in SAR-based geospatial analysis for global high-resolution land cover mapping. 
+This repository contains baseline models for <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap Synthetic Aperture Radar</a> (OpenEarthMap-SAR) benchmark dataset for land cover mapping under all-weather conditions. The motivation of this benchmark dataset is to facilitate advancements in SAR-based geospatial analysis for global high-resolution land cover mapping. 
 </p> 
-<p><img src="docs/examples-min.png"></p>
+<p><img src="docs/OEM-SAR_Logo.jpg"></p>
 </div>
 
 <div align="center">
@@ -14,27 +14,31 @@ This repository contains baseline models for <a href="https://arxiv.org/abs/2501
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 </div>
 
- 
-<!--## Context
-<div align="justify">
-
-This repository contains the baseline models for the OpenEarthMap-SAR land cover mapping generalized few-shot semantic segmentation challenge. 
-The motivation is to enable researchers to develop and benchmark learning methods for generalized few-shot semantic segmentation of high-resolution remote sensing imagery. 
-The challenge is in two phases: the development phase is for developing and testing methods on a *valset*, and the evaluation phase is for tweaking and testing on a *testset* for final submission.
-
-The pre-trained models with different SSL methods are provided as follows (13 bands of S2-L1C, 100 epochs, input clip to [0,1] by dividing 10000).
-</div>-->
 
 ## Dataset
 <div align="justify">
-
 <p>	
-The <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap Synthetic Aperture Radar</a> (OpenEarthMap-SAR) is a SAR dataset for global high-resolution land cover mapping under all weather conditions. The dataset consists of 1.5 million segments of 5033 aerial and satellite images with some manually annotated and all having pseudo land cover labels of 8 classes, covering 35 regions from Japan, France, and the USA. Each image has a size of 1024x1024 pixels at a ground sampling distance of 0.15m--0.5m. The dataset has served as the official dataset for 2025 IEEE GRSS Data Fusion Contest Track I. The dataset has been made publicly available at <a href="https://zenodo.org/records/14622048">Zenodo</a>.
+The <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap-SAR</a> is a synthetic aperture radar (SAR) benchmark dataset for global high-resolution land cover mapping under all weather conditions. The dataset consists of 1.5 million segments of 5033 aerial and satellite images covering 35 regions from Japan, France and the USA; and with partially manually annotated labels and fully pseudo labels of 8 land cover classes. Each image has a size of 1024x1024 pixels at a ground sampling distance of 0.15m--0.5m. The dataset has been made publicly available and can be downloaded from <a href="https://zenodo.org/records/14622048">Zenodo</a>. A detailed description of the dataset can be found <a href="https://arxiv.org/abs/2501.10891v2">here</a>.
+</p>
+<p><img src="docs/examples-min.png"></p>
+</div>
+
+## IEEE GRSS DFC2025
+<div align="justify">
+<p>	
+The OpenEarthMap-SAR benchmark dataset was served as the official dataset for <a href="">2025 IEEE GRSS Data Fusion Contest Track 1</a>. 
+
+The dataset for the Track 1 challenge is OpenEarthMap-SAR. The OpenEarthMap-SAR is a synthetic aperture radar dataset benchmark with OpenEarthMap optical data for global high-resolution land cover mapping. It consists of 5033 images at a 0.15–0.5m ground sampling distance covering 35 regions from Japan, France and the USA; and with partially manually annotated labels and fully pseudo labels of 8 land cover classes.  where it can also be downloaded. Below are examples of the OpenEarthMap-SAR dataset.
 
 
-The dataset for the Track 1 challenge is OpenEarthMap-SAR. The OpenEarthMap-SAR is a synthetic aperture radar dataset benchmark with OpenEarthMap optical data for global high-resolution land cover mapping. It consists of 5033 images at a 0.15–0.5m ground sampling distance covering 35 regions from Japan, France and the USA; and with partially manually annotated labels and fully pseudo labels of 8 land cover classes. A detailed description of the dataset can be found here, where it can also be downloaded. Below are examples of the OpenEarthMap-SAR dataset.
 
 
+The 2025 IEEE GRSS Data Fusion Contest, organized by the Image Analysis and Data Fusion Technical Committee, the University of Tokyo, RIKEN, and ETH Zurich, aims to foster the development of innovative solutions for all-weather land cover and building damage mapping using multimodal SAR and optical EO data at submeter resolution. The contest comprises two tracks: land cover mapping and building damage mapping. This repository contains the baseline model for the Track 1 challenge: All-Weather Land Cover Mapping. Check out here for the Track 2: All-weather building damage mapping info.
+
+GitHub license PyTorch Python
+
+2025 IEEE GRSS Data Fusion Contest Track 1: All-Weather Land Cover Mapping
+The Track 1 challenge focuses on developing methods for land cover mapping in all weather conditions using SAR data. The training data consists of multimodal submeter-resolution optical and SAR images with 8-class land cover labels. These labels are pseudo-labels derived from optical images based on pre-trained models. During the evaluation phase, models will rely exclusively on SAR to ensure they perform well in real-world, all-weather scenarios. It aims to improve the accuracy of land cover mapping under varying environmental conditions, demonstrating the utility of SAR data in monitoring land cover. The mean intersection over union (mIoU) metric is used to evaluate the performance.
 </p>
 <!--<p><img src="docs/assets/img/fewshot-examples1.png"></p>-->
 </div>
