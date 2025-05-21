@@ -32,13 +32,9 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
 
 ## Baseline Models
 <div align="justify">
-The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. The pre-trained parameters of each model can be downloaded from <a href="">here</a>.
+The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="">here</a>.
 
-#### Semantic Segmentation Task
-The mIoU performance of baseline models with , SAR, and SAR+Optical modalities across various
-labeling scenarios: pseudo labels (P), pseudo + 1 real label per region (P+R1), pseudo + 5 real labels per region (P+R5), 1
-real label per region (R1), and .
-
+##### Semantic Segmentation Task
 <table align="center">
     <!-- U-Net Optical -->
     <tr align="center">
@@ -250,6 +246,12 @@ real label per region (R1), and .
 	    <td align="left"> --- </td> 
     </tr>
 </table>
+
+##### UDA Semantic Segmentation Task
+
+
+##### Image Translation Task
+
 
 <!-- with different SSL methods are provided as follows (13 bands of S2-L1C, 100 epochs, input clip to [0,1] by dividing 10000).
 
