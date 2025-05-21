@@ -30,9 +30,229 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
 </p>
 </div>
 
-## Baseline
+## Baseline Models
 <div align="justify">
-<!--The pre-trained models with different SSL methods are provided as follows (13 bands of S2-L1C, 100 epochs, input clip to [0,1] by dividing 10000).-->
+The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. The pre-trained parameters of each model can be downloaded from <a href="">here</a>.
+
+#### Semantic Segmentation Task
+The mIoU performance of baseline models with , SAR, and SAR+Optical modalities across various
+labeling scenarios: pseudo labels (P), pseudo + 1 real label per region (P+R1), pseudo + 5 real labels per region (P+R5), 1
+real label per region (R1), and .
+
+<table align="center">
+    <!-- U-Net Optical -->
+    <tr align="center">
+        <th>Method</th>
+        <th>Modality</th> 
+	    <th>Labelling Scenario</th> 
+	    <th>mIoU</th>
+        <th>Pretrained</th> 
+        <th>Acknowledgement</th> 
+    </tr>
+    <tr align="center">
+        <td rowspan="9">UNet</td>
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+    <!-- U-Net SAR -->
+    <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+    <!-- U-Net Optical+SAR -->
+    <tr align="center">
+        <td> Optical + SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical + SAR</td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical + SAR</td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+   <!-- SegFormer Optical -->
+    <tr align="center">
+        <td rowspan="9">SegFormer</td>
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+    <!-- SegFormer SAR -->
+    <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+    <!-- SegFormer Optical+SAR -->
+    <tr align="center">
+        <td> Optical + SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical + SAR</td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical + SAR</td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <!-- VMamba Optical -->
+    <tr align="center">
+        <td rowspan="9">VMamba</td>
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+    <!-- VMamba SAR -->
+    <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+    <!-- VMamba Optical+SAR -->
+    <tr align="center">
+        <td> Optical + SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical + SAR</td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical + SAR</td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+</table>
+
+<!-- with different SSL methods are provided as follows (13 bands of S2-L1C, 100 epochs, input clip to [0,1] by dividing 10000).
+
 The PSPNet architecture with EfficientNet-B4 encoder from the [Segmentation Models Pytorch](https://github.com/qubvel/segmentation_models.pytorch?tab=readme-ov-file) GitHub repository is adopted as a baseline network.
 The network was pretrained using the *trainset* with the [Catalyst](https://catalyst-team.com/) library. Then, the state-of-the-art framework called [distilled information maximization](https://arxiv.org/abs/2211.14126) 
 (DIaM) was adopted to perform the GFSS task. The code in this repository contains only the GFSS portion. As mentioned by the baseline authors, any pretrained model can be used with their framework. 
@@ -43,43 +263,14 @@ bash test.sh
 The results of the baseline model on the *valset* are presented below. To reproduce the results, download the pretrained models from [here](https://drive.google.com/file/d/1eLjfUJ2ajAMkJKCsoJr-MGSSzZ-LqDbR/view?usp=sharing). 
 Follow the instructions in the **Usage** section, then run the `test.sh` script as explained. 
 
-<table align="center">
-    <tr align="center">
-        <td>Phase</td>
-        <td>base mIoU</td> 
-	<td>novel mIoU</td> 
-	<td>Average base-novel mIoU</td>
-        <td>Weighted base mIoU</td> 
-	<td>Weighted novel mIoU</td>
-	<td>Weighted-Sum base-novel mIoU</td>
-    </tr>
-    <tr align="center">
-        <td>valset</td>
-        <td> 29.48 </td> 
-	<td> 03.18 </td> 
-	<td> 16.33 </td> 
-	<td> 11.79 </td> 
-	<td> 1.91 </td> 
-	<td> 13.70 </td> 
-    </tr>
-   <tr align="center">
-	<td>testset</td>
-        <td> --- </td> 
-	<td> --- </td> 
-	<td> --- </td> 
-	<td> --- </td> 
-	<td> --- </td> 
-	<td> --- </td> 
-    </tr>   
-</table>
-The weighted mIoUs are calculated using `0.4:0.6 => base:novel`. These weights are derived from the state-of-the-art results presented in the baseline paper.
+The weighted mIoUs are calculated using `0.4:0.6 => base:novel`. These weights are derived from the state-of-the-art results presented in the baseline paper. -->
 
 </div>
 
 ## Usage
 <div align="justify">
 
-The repository structure consists of a configuration file that can be found in `config/`; data splits for each set in `data/`; and  all the codes for the GFSS task are in `src/`. The testing script `test.sh` is at the root of the repo.
+<!-- The repository consists of: a configuration file that can be found in `config/`; data splits for each set in `data/`; and  all the codes for the GFSS task are in `src/`. The testing script `test.sh` is at the root of the repo.
 The `docs` folder contains only GitHub page files.
 
 To use the baseline code, you first need to clone the repository and change your directory into the `OEM-Fewshot-Challenge` folder. Then follow the steps below:</br>
@@ -89,7 +280,7 @@ To use the baseline code, you first need to clone the repository and change your
 4. In the `oem.yaml` you need to set only the paths for the dataset and the pretrained weights. The other settings need not be changed to reproduce the results.
 5. Test the model by running the `test.sh` script as mentioned in the **Baseline** section. The script will use the *support_set* to adapt and predict the segmentation maps of the *query_set*. After running the script, the results are provided in a `results` folder which contains a `.txt` file of the IoUs and mIoUs, and a `preds` and `targets` folder for the predicted and the targets maps, respectively.
 
-You can pretrained your model using the *trainset* and any simple training scheme of your choice. The baseline paper used the [`train_base.py`](https://github.com/chunbolang/BAM/blob/main/train_base.py) script and base learner models of [BAM](https://github.com/chunbolang/BAM) (see the [baseline paper](https://github.com/sinahmr/DIaM?tab=readme-ov-file) for more info).
+You can pretrained your model using the *trainset* and any simple training scheme of your choice. The baseline paper used the [`train_base.py`](https://github.com/chunbolang/BAM/blob/main/train_base.py) script and base learner models of [BAM](https://github.com/chunbolang/BAM) (see the [baseline paper](https://github.com/sinahmr/DIaM?tab=readme-ov-file) for more info). -->
  
 </div>
 
@@ -108,9 +299,9 @@ For any scientific publication using this data, the following paper should be ci
 </pre>
 </div>
 
-## Acknowledgements
+<!-- ## Acknowledgements
 <div align="justify">
 
 We are most grateful to the authors of [DIaM](https://github.com/sinahmr/DIaM?tab=readme-ov-file), [Semantic Segmentation PyTorch](https://github.com/qubvel/segmentation_models.pytorch?tab=readme-ov-file), 
 and [Catalyst](https://catalyst-team.com/) from which the baseline code is built on.
-</div>
+</div> -->
