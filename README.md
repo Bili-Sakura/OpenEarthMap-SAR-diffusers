@@ -60,13 +60,13 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
     </tr>
-     <!-- <tr align="center">
+     <tr align="center">
         <td> Optical </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
-    </tr> -->
+    </tr>
     <!-- U-Net SAR -->
     <tr align="center">
         <td> SAR </td> 
@@ -82,12 +82,12 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
     </tr>
-     <!-- <tr align="center">
+     <tr align="center">
         <td> SAR </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td>  -->
+	    <td align="left"> --- </td> 
     </tr>
     <!-- U-Net Optical+SAR -->
     <tr align="center">
@@ -104,13 +104,13 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
     </tr>
-     <!-- <tr align="center">
+     <tr align="center">
         <td> Optical + SAR</td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
-    </tr> -->
+    </tr>
    <!-- SegFormer Optical
     <tr align="center">
         <td rowspan="9">SegFormer</td>
