@@ -60,13 +60,13 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
     </tr>
-     <tr align="center">
+     <!-- <tr align="center">
         <td> Optical </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
-    </tr>
+    </tr> -->
     <!-- U-Net SAR -->
     <tr align="center">
         <td> SAR </td> 
@@ -82,12 +82,12 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
     </tr>
-     <tr align="center">
+     <!-- <tr align="center">
         <td> SAR </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
+	    <td align="left"> --- </td>  -->
     </tr>
     <!-- U-Net Optical+SAR -->
     <tr align="center">
@@ -104,14 +104,14 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
     </tr>
-     <tr align="center">
+     <!-- <tr align="center">
         <td> Optical + SAR</td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
-    </tr>
-   <!-- SegFormer Optical -->
+    </tr> -->
+   <!-- SegFormer Optical
     <tr align="center">
         <td rowspan="9">SegFormer</td>
         <td> Optical </td> 
@@ -133,8 +133,8 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
-    </tr>
-    <!-- SegFormer SAR -->
+    </tr> -->
+    <!-- SegFormer SAR
     <tr align="center">
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
@@ -155,8 +155,8 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
-    </tr>
-    <!-- SegFormer Optical+SAR -->
+    </tr> -->
+    <!-- SegFormer Optical+SAR
     <tr align="center">
         <td> Optical + SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
@@ -177,8 +177,8 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
-    </tr>
-     <!-- VMamba Optical -->
+    </tr> -->
+     <!-- VMamba Optical
     <tr align="center">
         <td rowspan="9">VMamba</td>
         <td> Optical </td> 
@@ -200,8 +200,87 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
+    </tr> -->
+    <!-- VMamba SAR
+    <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
     </tr>
-    <!-- VMamba SAR -->
+     <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr> -->
+    <!-- VMamba Optical+SAR
+    <tr align="center">
+        <td> Optical + SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical + SAR</td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical + SAR</td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr> -->
+</table>
+
+#### UDA Semantic Segmentation
+<!-- <table align="center">
+    U-Net Optical
+    <tr align="center">
+        <th>Method</th>
+        <th>Modality</th> 
+	    <th>Labelling Scenario</th> 
+	    <th>mIoU</th>
+        <th>Pretrained</th> 
+        <th>Acknowledgement</th> 
+    </tr>
+    <tr align="center">
+        <td rowspan="9">UNet</td>
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+     <tr align="center">
+        <td> Optical </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <td align="left"> --- </td> 
+    </tr>
+    U-Net SAR
     <tr align="center">
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
@@ -223,7 +302,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
     </tr>
-    <!-- VMamba Optical+SAR -->
+    U-Net Optical+SAR
     <tr align="center">
         <td> Optical + SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
@@ -245,10 +324,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
     </tr>
-</table>
-
-#### UDA Semantic Segmentation
-
+</table> -->
 
 #### Image Translation
 
