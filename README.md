@@ -120,11 +120,11 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 </table>
 
 #### UDA Semantic Segmentation
-<p>Country-wise UDA with France as a source domain and Japan and USA as the target domains.</p>
+<p>DAFormer pretrianed models for country-wise UDA with France as the source domain.</p>
 <table align="center">
     <!-- Optical -->
     <tr align="center">
-        <th>Method</th>
+        <!-- <th>Method</th> -->
         <th>UDA Setup</th> 
         <th>Modality</th> 
 	    <th>Labelling Scenario</th> 
@@ -133,7 +133,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <!--  -->
     <tr align="center">
-        <td rowspan="18">UNet</td>
+        <!-- <td rowspan="18">UNet</td> -->
 	    <td align="left"> France-->USA </td> 
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
@@ -269,8 +269,8 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <tr align="left">
         <th>Acknowledgement</td> 
-        <td colspan=5>
-        The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
+        <td colspan=4>
+        The code for the UDA baseline is borrowed from the <a href="">DAFormer</a>. Thanks to the authors for making their code publically available.
         </td> 
     </tr>
 </table>
