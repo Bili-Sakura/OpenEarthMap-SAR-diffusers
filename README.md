@@ -46,7 +46,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
         <!-- <th>Acknowledgement</th>  -->
     </tr>
     <tr align="center">
-        <td rowspan="9">U-Net with EfficientNet-B4 encoder</td>
+        <td rowspan="9">U-Net with EfficientNet-B4</td>
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> --- </td> 
@@ -114,7 +114,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     <tr align="left">
         <th>Acknowledgement</td> 
         <td colspan=4>
-        The code for the U-Net with EfficientNet-B4 encoder is borrowed from the <a href="">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
+        The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
         </td> 
     </tr>
 </table>
@@ -122,80 +122,156 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 #### UDA Semantic Segmentation
 <p>Country-wise UDA with France as a source domain and Japan and USA as the target domains.</p>
 <table align="center">
-    <!-- U-Net Optical -->
+    <!-- Optical -->
     <tr align="center">
         <th>Method</th>
+        <th>UDA Setup</th> 
         <th>Modality</th> 
 	    <th>Labelling Scenario</th> 
 	    <th>mIoU</th>
         <th>Pretrained</th> 
-        <th>Acknowledgement</th> 
     </tr>
+    <!--  -->
     <tr align="center">
-        <td rowspan="9">UNet</td>
+        <td rowspan="18">UNet</td>
+	    <td align="left"> France-->USA </td> 
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
     </tr>
+    <tr align="center">
+	    <td align="left"> France-->Japan </td> 
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <!--  -->
      <tr align="center">
+        <td align="left"> France-->USA </td> 
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
     </tr>
-     <tr align="center">
+    <tr align="center">
+        <td align="left"> France-->Japan </td> 
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <!--  -->
+    <tr align="center">
+        <td align="left"> France-->USA</td> 
         <td> Optical </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
     </tr>
-    <!-- U-Net SAR -->
     <tr align="center">
+        <td align="left"> France-->Japan </td> 
+        <td> Optical </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <!-- SAR -->
+   <tr align="center">
+	    <td align="left"> France-->USA </td> 
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
     </tr>
-     <tr align="center">
-        <td> SAR </td> 
-	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> SAR </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-    <!-- U-Net Optical+SAR -->
     <tr align="center">
-        <td> Optical + SAR </td> 
+	    <td align="left"> France-->Japan </td> 
+        <td> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
     </tr>
+    <!--  -->
      <tr align="center">
-        <td> Optical + SAR</td> 
+        <td align="left"> France-->USA </td> 
+        <td> SAR </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
     </tr>
-     <tr align="center">
-        <td> Optical + SAR</td> 
+    <tr align="center">
+        <td align="left"> France-->Japan </td> 
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <!--  -->
+    <tr align="center">
+        <td align="left"> France-->USA</td> 
+        <td> SAR </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
+    </tr>
+    <tr align="center">
+        <td align="left"> France-->Japan </td> 
+        <td> SAR </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <!-- Optical+SAR -->
+<tr align="center">
+	    <td align="left"> France-->USA </td> 
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <tr align="center">
+	    <td align="left"> France-->Japan </td> 
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <!--  -->
+     <tr align="center">
+        <td align="left"> France-->USA </td> 
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <tr align="center">
+        <td align="left"> France-->Japan </td> 
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <!--  -->
+    <tr align="center">
+        <td align="left"> France-->USA</td> 
+        <td> SAR </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <tr align="center">
+        <td align="left"> France-->Japan </td> 
+        <td> SAR </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <tr align="left">
+        <th>Acknowledgement</td> 
+        <td colspan=5>
+        The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
+        </td> 
     </tr>
 </table>
 
