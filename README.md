@@ -43,6 +43,92 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <th>Labelling Scenario</th> 
 	    <th>mIoU</th>
         <th>Pretrained</th> 
+        <!-- <th>Acknowledgement</th>  -->
+    </tr>
+    <tr align="center">
+        <td rowspan="9">U-Net with EfficientNet-B4 encoder</td>
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <!-- <td align="left"> --- </td>  -->
+    </tr>
+     <tr align="center">
+        <td> Optical </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <!-- <td align="left"> --- </td>  -->
+    </tr>
+     <tr align="center">
+        <td> Optical </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <!-- <td align="left"> --- </td>  -->
+    </tr>
+    <!-- U-Net SAR -->
+    <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <!-- <td align="left"> --- </td>  -->
+    </tr>
+     <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <!-- <td align="left"> --- </td>  -->
+    </tr>
+     <tr align="center">
+        <td> SAR </td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <!-- <td align="left"> --- </td>  -->
+    </tr>
+    <!-- U-Net Optical+SAR -->
+    <tr align="center">
+        <td> Optical + SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <!-- <td align="left"> --- </td>  -->
+    </tr>
+     <tr align="center">
+        <td> Optical + SAR</td> 
+	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <!-- <td align="left"> --- </td>  -->
+    </tr>
+     <tr align="center">
+        <td> Optical + SAR</td> 
+	    <td align="left"> Only 5 real labels per region</td> 
+	    <td> --- </td> 
+	    <td> <a href="">Download</a> </td> 
+	    <!-- <td align="left"> --- </td>  -->
+    </tr>
+    <tr align="left">
+        <th>Acknowledgement</td> 
+        <td colspan=4>
+        The code for the U-Net with EfficientNet-B4 encoder is borrowed from the <a href="">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
+        </td> 
+    </tr>
+</table>
+
+#### UDA Semantic Segmentation
+<p>Country-wise UDA with France as a source domain and Japan and USA as the target domains.</p>
+<table align="center">
+    <!-- U-Net Optical -->
+    <tr align="center">
+        <th>Method</th>
+        <th>Modality</th> 
+	    <th>Labelling Scenario</th> 
+	    <th>mIoU</th>
+        <th>Pretrained</th> 
         <th>Acknowledgement</th> 
     </tr>
     <tr align="center">
@@ -111,220 +197,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="">Download</a> </td> 
 	    <td align="left"> --- </td> 
     </tr>
-   <!-- SegFormer Optical
-    <tr align="center">
-        <td rowspan="9">SegFormer</td>
-        <td> Optical </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical </td> 
-	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr> -->
-    <!-- SegFormer SAR
-    <tr align="center">
-        <td> SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> SAR </td> 
-	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> SAR </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr> -->
-    <!-- SegFormer Optical+SAR
-    <tr align="center">
-        <td> Optical + SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical + SAR</td> 
-	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical + SAR</td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr> -->
-     <!-- VMamba Optical
-    <tr align="center">
-        <td rowspan="9">VMamba</td>
-        <td> Optical </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical </td> 
-	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr> -->
-    <!-- VMamba SAR
-    <tr align="center">
-        <td> SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> SAR </td> 
-	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> SAR </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr> -->
-    <!-- VMamba Optical+SAR
-    <tr align="center">
-        <td> Optical + SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical + SAR</td> 
-	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical + SAR</td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr> -->
 </table>
-
-#### UDA Semantic Segmentation
-<!-- <table align="center">
-    U-Net Optical
-    <tr align="center">
-        <th>Method</th>
-        <th>Modality</th> 
-	    <th>Labelling Scenario</th> 
-	    <th>mIoU</th>
-        <th>Pretrained</th> 
-        <th>Acknowledgement</th> 
-    </tr>
-    <tr align="center">
-        <td rowspan="9">UNet</td>
-        <td> Optical </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical </td> 
-	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-    U-Net SAR
-    <tr align="center">
-        <td> SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> SAR </td> 
-	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> SAR </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-    U-Net Optical+SAR
-    <tr align="center">
-        <td> Optical + SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical + SAR</td> 
-	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-     <tr align="center">
-        <td> Optical + SAR</td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-	    <td align="left"> --- </td> 
-    </tr>
-</table> -->
 
 #### Image Translation
 
@@ -361,6 +234,12 @@ To use the baseline code, you first need to clone the repository and change your
 You can pretrained your model using the *trainset* and any simple training scheme of your choice. The baseline paper used the [`train_base.py`](https://github.com/chunbolang/BAM/blob/main/train_base.py) script and base learner models of [BAM](https://github.com/chunbolang/BAM) (see the [baseline paper](https://github.com/sinahmr/DIaM?tab=readme-ov-file) for more info). -->
  
 </div>
+
+<!-- Acknowledgement
+This code is heavily borrowed from MRF-UNet and DAFormer. Thanks to the authors for making their code publically available.
+
+License
+This work is licensed under the MIT License, however, please refer to the licences of the MRF-UNet and DAFormer if you are using this code for commercial matters. -->
 
 ## Citation
 <div align="justify">
