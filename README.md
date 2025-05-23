@@ -49,21 +49,21 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
         <td rowspan="9">U-Net with EfficientNet-B4</td>
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
+	    <td> 56.56 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 58.19 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <td> Optical </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 65.10 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
@@ -71,21 +71,21 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     <tr align="center">
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
+	    <td> 35.13 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 36.84 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <td> SAR </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 33.86 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
@@ -93,21 +93,21 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     <tr align="center">
         <td> Optical + SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
+	    <td> 56.32 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <td> Optical + SAR</td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 49.79 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <td> Optical + SAR</td> 
 	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 60.16 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
@@ -134,139 +134,95 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     <!--  -->
     <tr align="center">
         <!-- <td rowspan="18">UNet</td> -->
-	    <td align="left"> France-to->USA </td> 
+	    <td align="left"> France-to-USA </td> 
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
+	    <td> 39.38 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-	    <td align="left"> France-to->Japan </td> 
+	    <td align="left"> France-to-Japan </td> 
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
+	    <td> 44.35 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <!--  -->
      <tr align="center">
-        <td align="left"> France-to->USA </td> 
+        <td align="left"> France-to-USA </td> 
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 39.60 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-        <td align="left"> France-to->Japan </td> 
+        <td align="left"> France-to-Japan </td> 
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 43.74 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
-    <!--  -->
-    <!-- <tr align="center">
-        <td align="left"> France- ->USA</td> 
-        <td> Optical </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-    </tr>
-    <tr align="center">
-        <td align="left"> France- ->Japan </td> 
-        <td> Optical </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-    </tr> -->
     <!-- SAR -->
    <tr align="center">
-	    <td align="left"> France-to->USA </td> 
+	    <td align="left"> France-to-USA </td> 
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
+	    <td> 19.35 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-	    <td align="left"> France-to->Japan </td> 
+	    <td align="left"> France-to-Japan </td> 
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
+	    <td> 13.49 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <!--  -->
      <tr align="center">
-        <td align="left"> France-to->USA </td> 
+        <td align="left"> France-to-USA </td> 
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 21.26 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-        <td align="left"> France-to->Japan </td> 
+        <td align="left"> France-to-Japan </td> 
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 12.50 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
-    <!--  -->
-    <!-- <tr align="center">
-        <td align="left"> France->USA</td> 
-        <td> SAR </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-    </tr>
-    <tr align="center">
-        <td align="left"> France->Japan </td> 
-        <td> SAR </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-    </tr> -->
     <!-- Optical+SAR -->
-<tr align="center">
-	    <td align="left"> France-to->USA </td> 
+    <tr align="center">
+	    <td align="left"> France-to-USA </td> 
         <td> Optical + SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
+	    <td> 40.45 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-	    <td align="left"> France-to->Japan </td> 
+	    <td align="left"> France-to-Japan </td> 
         <td> Optical + SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> --- </td> 
+	    <td> 40.03 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <!--  -->
      <tr align="center">
-        <td align="left"> France-to->USA </td> 
+        <td align="left"> France-to-USA </td> 
         <td> Optical + SAR </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 37.21 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-        <td align="left"> France-to->Japan </td> 
+        <td align="left"> France-to-Japan </td> 
         <td> Optical + SAR </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
-	    <td> --- </td> 
+	    <td> 39.97 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <!--  -->
-    <!-- <tr align="center">
-        <td align="left"> France-to->USA</td> 
-        <td> Optical + SAR </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-    </tr>
-    <tr align="center">
-        <td align="left"> France->Japan </td> 
-        <td> Optical + SAR </td> 
-	    <td align="left"> Only 5 real labels per region</td> 
-	    <td> --- </td> 
-	    <td> <a href="">Download</a> </td> 
-        </tr> -->
     <tr align="left">
         <th>Acknowledgement</td> 
         <td colspan=4>
