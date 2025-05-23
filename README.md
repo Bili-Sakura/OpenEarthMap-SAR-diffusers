@@ -134,14 +134,14 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     <!--  -->
     <tr align="center">
         <!-- <td rowspan="18">UNet</td> -->
-	    <td align="left"> France-->USA </td> 
+	    <td align="left"> France-to->USA </td> 
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-	    <td align="left"> France-->Japan </td> 
+	    <td align="left"> France-to->Japan </td> 
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> --- </td> 
@@ -149,44 +149,44 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <!--  -->
      <tr align="center">
-        <td align="left"> France-->USA </td> 
+        <td align="left"> France-to->USA </td> 
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-        <td align="left"> France-->Japan </td> 
+        <td align="left"> France-to->Japan </td> 
         <td> Optical </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <!--  -->
-    <tr align="center">
-        <td align="left"> France-->USA</td> 
+    <!-- <tr align="center">
+        <td align="left"> France- ->USA</td> 
         <td> Optical </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-        <td align="left"> France-->Japan </td> 
+        <td align="left"> France- ->Japan </td> 
         <td> Optical </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-    </tr>
+    </tr> -->
     <!-- SAR -->
    <tr align="center">
-	    <td align="left"> France-->USA </td> 
+	    <td align="left"> France-to->USA </td> 
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-	    <td align="left"> France-->Japan </td> 
+	    <td align="left"> France-to->Japan </td> 
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> --- </td> 
@@ -194,34 +194,34 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <!--  -->
      <tr align="center">
-        <td align="left"> France-->USA </td> 
+        <td align="left"> France-to->USA </td> 
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-        <td align="left"> France-->Japan </td> 
+        <td align="left"> France-to->Japan </td> 
         <td> SAR </td> 
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <!--  -->
-    <tr align="center">
-        <td align="left"> France-->USA</td> 
+    <!-- <tr align="center">
+        <td align="left"> France->USA</td> 
         <td> SAR </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-        <td align="left"> France-->Japan </td> 
+        <td align="left"> France->Japan </td> 
         <td> SAR </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-    </tr>
+    </tr> -->
     <!-- Optical+SAR -->
 <tr align="center">
 	    <td align="left"> France-to->USA </td> 
@@ -253,7 +253,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <!--  -->
-    <tr align="center">
+    <!-- <tr align="center">
         <td align="left"> France-to->USA</td> 
         <td> Optical + SAR </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
@@ -261,12 +261,12 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-        <td align="left"> France-->Japan </td> 
+        <td align="left"> France->Japan </td> 
         <td> Optical + SAR </td> 
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> --- </td> 
 	    <td> <a href="">Download</a> </td> 
-    </tr>
+        </tr> -->
     <tr align="left">
         <th>Acknowledgement</td> 
         <td colspan=4>
