@@ -47,21 +47,21 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <tr align="center">
         <td rowspan="9">U-Net with EfficientNet-B4</td>
-        <td> Optical </td> 
+        <td rowspan="3"> Optical </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> 56.56 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
-        <td> Optical </td> 
+        <!-- <td> Optical </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 58.19 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
-        <td> Optical </td> 
+        <!-- <td> Optical </td>  -->
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> 65.10 </td> 
 	    <td> <a href="">Download</a> </td> 
@@ -69,21 +69,21 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <!-- U-Net SAR -->
     <tr align="center">
-        <td> SAR </td> 
+        <td rowspan="3"> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> 35.13 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
-        <td> SAR </td> 
+        <!-- <td> SAR </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 36.84 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
-        <td> SAR </td> 
+        <!-- <td> SAR </td>  -->
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> 33.86 </td> 
 	    <td> <a href="">Download</a> </td> 
@@ -91,21 +91,21 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <!-- U-Net Optical+SAR -->
     <tr align="center">
-        <td> Optical + SAR </td> 
+        <td rowspan="3"> Optical + SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> 56.32 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
-        <td> Optical + SAR</td> 
+        <!-- <td> Optical + SAR</td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 49.79 </td> 
 	    <td> <a href="">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
-        <td> Optical + SAR</td> 
+        <!-- <td> Optical + SAR</td>  -->
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> 60.16 </td> 
 	    <td> <a href="">Download</a> </td> 
@@ -120,7 +120,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 </table>
 
 #### UDA Semantic Segmentation
-<p>DAFormer pretrianed models for country-wise UDA with France as the source domain.</p>
+<p>The <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Hoyer_DAFormer_Improving_Network_Architectures_and_Training_Strategies_for_Domain-Adaptive_Semantic_CVPR_2022_paper.pdf">DAFormer</a> pretrianed models for country-wise UDA with France as the source domain.</p>
 <table align="center">
     <!-- Optical -->
     <tr align="center">
@@ -134,90 +134,87 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     <!--  -->
     <tr align="center">
         <!-- <td rowspan="18">UNet</td> -->
-	    <td align="left"> France-to-USA </td> 
-        <td> Optical </td> 
+	    <td align="left" rowspan="2"> France-to-USA </td> 
+        <td rowspan="2"> Optical </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> 39.38 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-	    <td align="left"> France-to-Japan </td> 
-        <td> Optical </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> 44.35 </td> 
-	    <td> <a href="">Download</a> </td> 
-    </tr>
-    <!--  -->
-     <tr align="center">
-        <td align="left"> France-to-USA </td> 
-        <td> Optical </td> 
+        <!-- <td align="left"> France-to-USA </td>  -->
+        <!-- <td> Optical </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 39.60 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-        <td align="left"> France-to-Japan </td> 
-        <td> Optical </td> 
+	    <td align="left" rowspan="2"> France-to-Japan </td> 
+        <td rowspan="2"> Optical </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> 44.35 </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <tr align="center">
+        <!-- <td align="left"> France-to-Japan </td>  -->
+        <!-- <td> Optical </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 43.74 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <!-- SAR -->
    <tr align="center">
-	    <td align="left"> France-to-USA </td> 
-        <td> SAR </td> 
+	    <td align="left" rowspan="2"> France-to-USA </td> 
+        <td rowspan="2"> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> 19.35 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-	    <td align="left"> France-to-Japan </td> 
-        <td> SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> 13.49 </td> 
-	    <td> <a href="">Download</a> </td> 
-    </tr>
-    <!--  -->
-     <tr align="center">
-        <td align="left"> France-to-USA </td> 
-        <td> SAR </td> 
+        <!-- <td align="left"> France-to-USA </td>  -->
+        <!-- <td> SAR </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 21.26 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-        <td align="left"> France-to-Japan </td> 
-        <td> SAR </td> 
+	    <td align="left" rowspan="2"> France-to-Japan </td> 
+        <td rowspan="2"> SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> 13.49 </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <tr align="center">
+        <!-- <td align="left"> France-to-Japan </td>  -->
+        <!-- <td> SAR </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 12.50 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <!-- Optical+SAR -->
     <tr align="center">
-	    <td align="left"> France-to-USA </td> 
-        <td> Optical + SAR </td> 
+	    <td align="left" rowspan="2"> France-to-USA </td> 
+        <td rowspan="2"> Optical + SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> 40.45 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-	    <td align="left"> France-to-Japan </td> 
-        <td> Optical + SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
-	    <td> 40.03 </td> 
-	    <td> <a href="">Download</a> </td> 
-    </tr>
-    <!--  -->
-     <tr align="center">
-        <td align="left"> France-to-USA </td> 
-        <td> Optical + SAR </td> 
+        <!-- <td align="left"> France-to-USA </td>  -->
+        <!-- <td> Optical + SAR </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 37.21 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
     <tr align="center">
-        <td align="left"> France-to-Japan </td> 
-        <td> Optical + SAR </td> 
+	    <td align="left" rowspan="2"> France-to-Japan </td> 
+        <td rowspan="2"> Optical + SAR </td> 
+	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td> 40.03 </td> 
+	    <td> <a href="">Download</a> </td> 
+    </tr>
+    <tr align="center">
+        <!-- <td align="left"> France-to-Japan </td>  -->
+        <!-- <td> Optical + SAR </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 39.97 </td> 
 	    <td> <a href="">Download</a> </td> 
@@ -226,7 +223,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     <tr align="left">
         <th>Acknowledgement</td> 
         <td colspan=4>
-        The code for the UDA baseline is borrowed from the <a href="">DAFormer</a>. Thanks to the authors for making their code publically available.
+        The code for the UDA baseline is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
         </td> 
     </tr>
 </table>
