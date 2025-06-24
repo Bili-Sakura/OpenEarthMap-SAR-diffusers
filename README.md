@@ -32,7 +32,7 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
 
 ## Baseline Models
 <div align="justify">
-The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="">here</a>.
+The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/138jNYpgIey8uNOVLoW6p9dA1A5dhr8_K?usp=drive_link">here</a>.
 
 #### Semantic Segmentation
 <table align="center">
@@ -50,21 +50,21 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
         <td rowspan="3"> Optical </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> 56.56 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1tsbFhc0ukHggocr7dAzbRs6FMPFnQiMG/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <!-- <td> Optical </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 58.19 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1hyHlC6stjt4OQ9BWXIv4OP87YkOLpQHr/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <!-- <td> Optical </td>  -->
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> 65.10 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/16REK9OcnhzrUte68hnBj7SJCqLpt1c_U/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
     <!-- U-Net SAR -->
@@ -72,21 +72,21 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
         <td rowspan="3"> SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> 35.13 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1hvgJIWttGg-NloVfeQiXIoFi26RvAUVg/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <!-- <td> SAR </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 36.84 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1BSe2ywsFbAcf0CS_7j9_fvWTe5Z89TlC/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <!-- <td> SAR </td>  -->
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> 33.86 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1Iy_VE6LpoUfOuLFM8V54WTmSSKBOKNwm/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
     <!-- U-Net Optical+SAR -->
@@ -94,27 +94,27 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
         <td rowspan="3"> Optical + SAR </td> 
 	    <td align="left"> Pseudo labels for all regions</td> 
 	    <td> 56.32 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1AFRU0sreULHzb2fCCTag8Jjx6XxJUUiw/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <!-- <td> Optical + SAR</td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 49.79 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/18Y_NHJ78zT5lOL5h_muCNtrivu6aLl4V/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
      <tr align="center">
         <!-- <td> Optical + SAR</td>  -->
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> 60.16 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1raL8qVwSSraqYBcvHO06yHHpw-vCkD_a/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
     <tr align="left">
         <th>Acknowledgement</td> 
         <td colspan=4>
-        The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
+        The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
         </td> 
     </tr>
 </table>
