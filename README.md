@@ -20,7 +20,7 @@ This repository contains baseline models for <a href="https://arxiv.org/abs/2501
 <p>	
 The <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap-SAR</a> is a synthetic aperture radar (SAR) benchmark dataset for global high-resolution land cover mapping under all weather conditions. The dataset consists of 1.5 million segments of 5033 aerial and satellite images covering 35 regions from Japan, France and the USA; and with partially manually annotated labels and fully pseudo labels of 8 land cover classes. Each image has a size of 1024x1024 pixels at a ground sampling distance of 0.15m--0.5m. The dataset has been made publicly available at <a href="https://zenodo.org/records/14622048">Zenodo</a>, where you can download it. Below are examples of the OpenEarthMap-SAR dataset.
 </p>
-<p><img src="data/data_examples.png"></p>
+<p><img src="assets/data_examples.png"></p>
 </div>
 
 ## IEEE GRSS DFC2025
