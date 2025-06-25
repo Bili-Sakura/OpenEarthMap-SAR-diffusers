@@ -1,10 +1,10 @@
 <div align="justify">
 	
-## OpenEarthMap Synthetic Aperture Radar Dataset 
+## OpenEarthMap Synthetic Aperture Radar
 <p align="justify">
 This repository contains baseline models for <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap Synthetic Aperture Radar</a> (OpenEarthMap-SAR) benchmark dataset for land cover mapping under all-weather conditions. The motivation of this benchmark dataset is to facilitate advancements in SAR-based geospatial analysis for global high-resolution land cover mapping. 
 </p> 
-<p><img src="docs/OEM-SAR_Logo.jpg"></p>
+<p><img src="assets/OEM-SAR_Logo.jpg"></p>
 </div>
 
 <div align="center">
@@ -20,7 +20,7 @@ This repository contains baseline models for <a href="https://arxiv.org/abs/2501
 <p>	
 The <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap-SAR</a> is a synthetic aperture radar (SAR) benchmark dataset for global high-resolution land cover mapping under all weather conditions. The dataset consists of 1.5 million segments of 5033 aerial and satellite images covering 35 regions from Japan, France and the USA; and with partially manually annotated labels and fully pseudo labels of 8 land cover classes. Each image has a size of 1024x1024 pixels at a ground sampling distance of 0.15m--0.5m. The dataset has been made publicly available at <a href="https://zenodo.org/records/14622048">Zenodo</a>, where you can download it. Below are examples of the OpenEarthMap-SAR dataset.
 </p>
-<p><img src="docs/examples-min.png"></p>
+<p><img src="assets/examples-min.png"></p>
 </div>
 
 ## IEEE GRSS DFC2025
@@ -32,7 +32,7 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
 
 ## Baseline Models
 <div align="justify">
-The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/138jNYpgIey8uNOVLoW6p9dA1A5dhr8_K?usp=drive_link">here</a>.
+<p>The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/138jNYpgIey8uNOVLoW6p9dA1A5dhr8_K?usp=drive_link">here</a>.</p>
 
 #### Semantic Segmentation
 <table align="center">
@@ -48,7 +48,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     <tr align="center">
         <td rowspan="9">U-Net with EfficientNet-B4</td>
         <td rowspan="3"> Optical </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td align="left"> Pseudo labels</td> 
 	    <td> 56.56 </td> 
 	    <td> <a href="https://drive.google.com/file/d/1tsbFhc0ukHggocr7dAzbRs6FMPFnQiMG/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
@@ -70,7 +70,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     <!-- U-Net SAR -->
     <tr align="center">
         <td rowspan="3"> SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td align="left"> Pseudo labels</td> 
 	    <td> 35.13 </td> 
 	    <td> <a href="https://drive.google.com/file/d/1hvgJIWttGg-NloVfeQiXIoFi26RvAUVg/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
@@ -91,20 +91,20 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <!-- U-Net Optical+SAR -->
     <tr align="center">
-        <td rowspan="3"> Optical + SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
+        <td rowspan="3">SAR + Optical</td> 
+	    <td align="left">Pseudo labels</td> 
 	    <td> 56.32 </td> 
 	    <td> <a href="https://drive.google.com/file/d/1AFRU0sreULHzb2fCCTag8Jjx6XxJUUiw/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
-     <tr align="center">
+    <tr align="center">
         <!-- <td> Optical + SAR</td>  -->
-	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
+	    <td align="left">Pseudo labels + 5 real labels per region</td> 
 	    <td> 49.79 </td> 
 	    <td> <a href="https://drive.google.com/file/d/18Y_NHJ78zT5lOL5h_muCNtrivu6aLl4V/view?usp=drive_link">Download</a> </td> 
 	    <!-- <td align="left"> --- </td>  -->
     </tr>
-     <tr align="center">
+    <tr align="center">
         <!-- <td> Optical + SAR</td>  -->
 	    <td align="left"> Only 5 real labels per region</td> 
 	    <td> 60.16 </td> 
@@ -120,13 +120,16 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 </table>
 
 #### UDA Semantic Segmentation
-<p>The <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Hoyer_DAFormer_Improving_Network_Architectures_and_Training_Strategies_for_Domain-Adaptive_Semantic_CVPR_2022_paper.pdf">DAFormer</a> pretrianed models for country-wise UDA with France as the source domain.</p>
+<p>The <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Hoyer_DAFormer_Improving_Network_Architectures_and_Training_Strategies_for_Domain-Adaptive_Semantic_CVPR_2022_paper.pdf">DAFormer</a> pretrianed models for country-wise UDA with France as the source domain.
+
+The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/138jNYpgIey8uNOVLoW6p9dA1A5dhr8_K?usp=drive_link">here</a>.
+</p>
 <table align="center">
     <!-- Optical -->
     <tr align="center">
         <!-- <th>Method</th> -->
-        <th>UDA Setup</th> 
         <th>Modality</th> 
+        <th>UDA Setup</th> 
 	    <th>Labelling Scenario</th> 
 	    <th>mIoU</th>
         <th>Pretrained</th> 
@@ -134,9 +137,9 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     <!--  -->
     <tr align="center">
         <!-- <td rowspan="18">UNet</td> -->
+        <td rowspan="4"> Optical </td> 
 	    <td align="left" rowspan="2"> France-to-USA </td> 
-        <td rowspan="2"> Optical </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td align="left"> Pseudo labels</td> 
 	    <td> 39.38 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
@@ -149,8 +152,8 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <tr align="center">
 	    <td align="left" rowspan="2"> France-to-Japan </td> 
-        <td rowspan="2"> Optical </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
+        <!-- <td rowspan="2"> Optical </td>  -->
+	    <td align="left"> Pseudo labels</td> 
 	    <td> 44.35 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
@@ -163,9 +166,9 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <!-- SAR -->
    <tr align="center">
+        <td rowspan="4"> SAR </td> 
 	    <td align="left" rowspan="2"> France-to-USA </td> 
-        <td rowspan="2"> SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td align="left"> Pseudo labels</td> 
 	    <td> 19.35 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
@@ -178,8 +181,8 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <tr align="center">
 	    <td align="left" rowspan="2"> France-to-Japan </td> 
-        <td rowspan="2"> SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
+        <!-- <td rowspan="2"> SAR </td>  -->
+	    <td align="left"> Pseudo labels</td> 
 	    <td> 13.49 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
@@ -192,9 +195,9 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <!-- Optical+SAR -->
     <tr align="center">
+        <td rowspan="4">SAR + Optical</td> 
 	    <td align="left" rowspan="2"> France-to-USA </td> 
-        <td rowspan="2"> Optical + SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
+	    <td align="left"> Pseudo labels</td> 
 	    <td> 40.45 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
@@ -207,8 +210,8 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
     </tr>
     <tr align="center">
 	    <td align="left" rowspan="2"> France-to-Japan </td> 
-        <td rowspan="2"> Optical + SAR </td> 
-	    <td align="left"> Pseudo labels for all regions</td> 
+        <!-- <td rowspan="2">SAR + Optical</td>  -->
+	    <td align="left"> Pseudo labels</td> 
 	    <td> 40.03 </td> 
 	    <td> <a href="">Download</a> </td> 
     </tr>
@@ -229,6 +232,76 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 </table>
 
 #### Image Translation
+<p>The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/1TQIglCWyOOEMLf9pwYHVoetffaCvnwmw?usp=drive_link">here</a>.
+BicycleGAN [75], CycleGAN [76], NICE-GAN [77], CUT [78], UNSB [79], and Decent [80]
+</p>
+<table align="center">
+    <!-- Optical -->
+    <tr align="center">
+        <th>Method</th>
+        <th>Task</th> 
+        <th>Sub-Task</th> 
+	    <th>Modality</th> 
+	    <th>PSNR</th>
+	    <th>SSIM</th>
+        <th>Pretrained</th> 
+    </tr>
+    <!--  -->
+    <tr align="center">
+        <td rowspan="6">CUT</td>
+	    <td rowspan="3" align="left"> RGB Generation </td> 
+        <td align="left"> Pseudo Semantic2RGB </td> 
+	    <td align="left"> Pseudo Semantic Map</td> 
+	    <td> 4.62 </td> 
+	    <td> 0.2799 </td> 
+	    <td> <a href="https://drive.google.com/drive/folders/1H-yENaO-LrpwXuN3sG0ksAKuBfn5Ca-K?usp=drive_link">Download</a> </td> 
+    </tr>
+    <tr align="center">
+        <td align="left"> Real Semantic2RGB </td> 
+	    <td align="left"> Real Semantic Map </td> 
+	    <td> 14.57 </td> 
+	    <td> 0.2141 </td> 
+	    <td> <a href="https://drive.google.com/drive/folders/10xPg1L2WLHnw_ji-INrsLH-HwwOUHG0D?usp=drive_link">Download</a> </td> 
+    </tr>
+    <tr align="center">
+        <td align="left"> SAR2RGB </td> 
+	    <td align="left"> SAR </td> 
+	    <td> 12.47 </td> 
+	    <td> 0.1075 </td> 
+	    <td> <a href="https://drive.google.com/drive/folders/1fsABom2c4lwflLdrVXLp6cUcIV9vZvW7?usp=drive_link">Download</a> </td> 
+    </tr>
+    <!--  -->
+       <tr align="center">
+        <!-- <td rowspan="6">CUT</td> -->
+	    <td rowspan="3" align="left"> SAR Generation </td> 
+        <td align="left"> Pseudo Semantic2SAR </td> 
+	    <td align="left"> Pseudo Semantic Map</td> 
+	    <td> 9.48 </td> 
+	    <td> 0.0213 </td> 
+	    <td> <a href="https://drive.google.com/drive/folders/1at81X_upRHHMZZgIwknF96XfwBZF3ooo?usp=drive_link">Download</a> </td> 
+    </tr>
+    <tr align="center">
+        <td align="left"> Real Semantic2SAR </td> 
+	    <td align="left"> Real Semantic Map </td> 
+	    <td> 9.27 </td> 
+	    <td> 0.0239 </td> 
+	    <td> <a href="https://drive.google.com/drive/folders/1jhITJcppFZdU85Wf6gP3xQ1XBYcwt8Ys?usp=drive_link">Download</a> </td> 
+    </tr>
+    <tr align="center">
+        <td align="left"> RGB2SAR </td> 
+	    <td align="left"> RGB </td> 
+	    <td> 9.18 </td> 
+	    <td> 0.0292 </td> 
+	    <td> <a href="https://drive.google.com/drive/folders/1pbUq3zFyCXDKsvW4rWYsLi4ctLZ6pn9I?usp=drive_link">Download</a> </td> 
+    </tr>
+    <!--  -->
+    <tr align="left">
+        <th>Acknowledgement</td> 
+        <td colspan=4>
+        The code for the UDA baseline is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
+        </td> 
+    </tr>
+</table>
 
 
 <!-- with different SSL methods are provided as follows (13 bands of S2-L1C, 100 epochs, input clip to [0,1] by dividing 10000).
