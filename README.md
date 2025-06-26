@@ -26,12 +26,6 @@ The OpenEarthMap-SAR dataset consists of 1.5 million segments of 5033 aerial and
 <p><img src="assets/data_examples.png"></p>
 </div>
 
-<!-- ## IEEE GRSS DFC2025
-<div align="justify">
-<p>	
-The OpenEarthMap-SAR dataset was served as the official dataset for the <a href="https://www.grss-ieee.org/technical-committees/image-analysis-and-data-fusion/?tab=data-fusion-contest">2025 IEEE GRSS Data Fusion Contest Track 1</a> organized by the IEEE GRSS Image Analysis and Data Fusion Technical Committee, the University of Tokyo, RIKEN, and ETH Zurich. The contest aims to foster the development of innovative solutions for all-weather land cover and building damage mapping using multimodal SAR and optical EO data at submeter resolution. Check out the winners of the contest at <a href="https://www.grss-ieee.org/community/technical-committees/winners-of-the-2025-ieee-grss-data-fusion-contest-all-weather-land-cover-and-building-damage-mapping/">here</a>.
-</p>
-</div> -->
 
 ## Baseline Models
 <div align="justify">
@@ -100,7 +94,7 @@ The OpenEarthMap-SAR dataset was served as the official dataset for the <a href=
 	    <td> <a href="https://drive.google.com/file/d/1raL8qVwSSraqYBcvHO06yHHpw-vCkD_a/view?usp=drive_link">Download</a> </td> 
     </tr>
 </table>
-<b>Acknowledgement:</b> The code for the <a href="https://arxiv.org/abs/1505.04597">U-Net</a> with <a href="https://arxiv.org/abs/1905.11946">EfficientNet-B4</a> is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
+The code for the <a href="https://arxiv.org/abs/1505.04597">U-Net</a> with <a href="https://arxiv.org/abs/1905.11946">EfficientNet-B4</a> is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
 <p>&nbsp;</p>
 
 
@@ -190,7 +184,7 @@ Yon can download all the pre-trained basleine models for the UDA semantic segmen
 	    <td> <a href="https://drive.google.com/file/d/1LGqMu7NRTiSojKvWfiFLKJfQXEfirZf5/view?usp=drive_link">Download</a> </td> 
     </tr>
 </table>
-<b>Acknowledgement:</b> The code for the UDA semantic segmentation task is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
+The code for the UDA semantic segmentation task is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
 <p>&nbsp;</p>
 
 
@@ -254,35 +248,13 @@ Yon can download all the pre-trained basleine models for the UDA semantic segmen
 	    <td> <a href="https://drive.google.com/drive/folders/1pbUq3zFyCXDKsvW4rWYsLi4ctLZ6pn9I?usp=drive_link">Download</a> </td> 
     </tr>
 </table>
-<b>Acknowledgement:</b> The code for the image translation task is borrowed from the <a href="https://github.com/taesungp/contrastive-unpaired-translation">Contrastive Unpaired Translation (CUT)</a>. Thanks to the authors for making their code publically available.
+<b>The code for the image translation task is borrowed from the <a href="https://github.com/taesungp/contrastive-unpaired-translation">Contrastive Unpaired Translation (CUT)</a>. Thanks to the authors for making their code publically available.
 <p>&nbsp;</p>
 
-<!-- with different SSL methods are provided as follows (13 bands of S2-L1C, 100 epochs, input clip to [0,1] by dividing 10000).
-
-The PSPNet architecture with EfficientNet-B4 encoder from the [Segmentation Models Pytorch](https://github.com/qubvel/segmentation_models.pytorch?tab=readme-ov-file) GitHub repository is adopted as a baseline network.
-The network was pretrained using the *trainset* with the [Catalyst](https://catalyst-team.com/) library. Then, the state-of-the-art framework called [distilled information maximization](https://arxiv.org/abs/2211.14126) 
-(DIaM) was adopted to perform the GFSS task. The code in this repository contains only the GFSS portion. As mentioned by the baseline authors, any pretrained model can be used with their framework. 
-The code was adopted from [here](https://github.com/sinahmr/DIaM?tab=readme-ov-file). To run the code on the *valset*, simply clone this repository and change your directory into the `OEM-Fewshot-Challenge` folder which contains the code files. Then from a terminal, run the `test.sh` script. as:
-```bash
-bash test.sh 
-```
-The results of the baseline model on the *valset* are presented below. To reproduce the results, download the pretrained models from [here](https://drive.google.com/file/d/1eLjfUJ2ajAMkJKCsoJr-MGSSzZ-LqDbR/view?usp=sharing). 
-Follow the instructions in the **Usage** section, then run the `test.sh` script as explained. 
-
-The weighted mIoUs are calculated using `0.4:0.6 => base:novel`. These weights are derived from the state-of-the-art results presented in the baseline paper. -->
-
-</div>
-
-
-<!-- Acknowledgement
-This code is heavily borrowed from MRF-UNet and DAFormer. Thanks to the authors for making their code publically available.
-
-License
-This work is licensed under the MIT License, however, please refer to the licences of the MRF-UNet and DAFormer if you are using this code for commercial matters. -->
 
 ## Citation
 <div align="justify">
-For any scientific publication using this data, the following paper should be cited:
+<p>For any scientific publication using this data, the following paper should be cited:</p>
 <pre style="white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
 @article{xia2025openearthmap,
   title   = {OpenEarthMap-SAR: A Benchmark Synthetic Aperture Radar Dataset for Global High-Resolution Land Cover Mapping},
@@ -296,7 +268,17 @@ For any scientific publication using this data, the following paper should be ci
 
 ## Acknowledgements
 <div align="justify">
-
-We are most grateful to the authors of [DIaM](https://github.com/sinahmr/DIaM?tab=readme-ov-file), [Semantic Segmentation PyTorch](https://github.com/qubvel/segmentation_models.pytorch?tab=readme-ov-file), 
-and [Catalyst](https://catalyst-team.com/) from which the baseline code is built on.
+<p>We are most grateful to the authors of the following works for making their source codes publicly available:</p>
+<ul>
+    <li><a href="https://github.com/qubvel/segmentation_models.pytorch?tab=readme-ov-file">Semantic Segmentation PyTorch</a></li>
+    <li><a href="https://github.com/lhoyer/DAFormer">DAFormer</a></li>
+    <li><a href="https://github.com/wangkaihong/CDAC">CDAC</a></li>
+    <li><a href="https://github.com/junyanz/BicycleGAN">BicycleGAN</a></li>
+    <li><a href="https://github.com/taesungp/contrastive-unpaired-translation">CUT</a></li>
+    <li><a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">CycleGAN-Pix2Pix</a></li>
+    <li><a href="https://github.com/Mid-Push/Decent">Decent</a></li>
+    <li><a href="https://github.com/alpc91/NICE-GAN-pytorch">NICE-GAN</a></li>
+    <li><a href="https://github.com/NVlabs/SPADE">SPADE</a></li>
+    <li><a href="https://github.com/cyclomon/UNSB">UNSB</a></li>
+</ul>
 </div>
