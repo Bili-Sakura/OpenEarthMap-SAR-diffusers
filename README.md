@@ -2,9 +2,12 @@
 	
 ## OpenEarthMap-SAR
 <p align="justify">
-This repository contains baseline models for <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap Synthetic Aperture Radar</a> (OpenEarthMap-SAR) benchmark dataset for land cover mapping under all-weather conditions. The motivation of this benchmark dataset is to facilitate advancements in SAR-based geospatial analysis for global high-resolution land cover mapping. 
+The <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap Synthetic Aperture Radar</a> (OpenEarthMap-SAR) is a high-resolution SAR benchmark dataset for land cover mapping under all-weather conditions. The motivation of this benchmark dataset is to facilitate advancements in SAR-based geospatial analysis for global high-resolution land cover mapping. 
 </p> 
-<p><img src="assets/OEM-SAR_Logo.jpg"></p>
+<p>	
+The OpenEarthMap-SAR dataset was served as the official dataset for the <a href="https://www.grss-ieee.org/technical-committees/image-analysis-and-data-fusion/?tab=data-fusion-contest">2025 IEEE GRSS Data Fusion Contest Track 1</a> organized by the IEEE GRSS Image Analysis and Data Fusion Technical Committee, the University of Tokyo, RIKEN, and ETH Zurich. The contest aims to foster the development of innovative solutions for all-weather land cover and building damage mapping using multimodal SAR and optical EO data at submeter resolution. Check out the winners of the contest at <a href="https://www.grss-ieee.org/community/technical-committees/winners-of-the-2025-ieee-grss-data-fusion-contest-all-weather-land-cover-and-building-damage-mapping/">here</a>.
+</p>
+<!-- <p><img src="assets/OEM-SAR_Logo.jpg"></p> -->
 </div>
 
 <div align="center">
@@ -18,23 +21,24 @@ This repository contains baseline models for <a href="https://arxiv.org/abs/2501
 ## Dataset
 <div align="justify">
 <p>	
-The <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap-SAR</a> is a synthetic aperture radar (SAR) benchmark dataset for global high-resolution land cover mapping under all weather conditions. The dataset consists of 1.5 million segments of 5033 aerial and satellite images covering 35 regions from Japan, France and the USA; and with partially manually annotated labels and fully pseudo labels of 8 land cover classes. Each image has a size of 1024x1024 pixels at a ground sampling distance of 0.15m--0.5m. The dataset has been made publicly available at <a href="https://zenodo.org/records/14622048">Zenodo</a>, where you can download it. Below are examples of the OpenEarthMap-SAR dataset.
+The OpenEarthMap-SAR dataset consists of 1.5 million segments of 5033 aerial and satellite images covering 35 regions from Japan, France and the USA; and with partially manually annotated labels and fully pseudo labels of 8 land cover classes. Each image has a size of 1024x1024 pixels at a ground sampling distance of 0.15m--0.5m. The dataset has been made publicly available at <a href="https://zenodo.org/records/14622048">Zenodo</a>, where you can download it. Below are examples of the dataset.
 </p>
 <p><img src="assets/data_examples.png"></p>
 </div>
 
-## IEEE GRSS DFC2025
+<!-- ## IEEE GRSS DFC2025
 <div align="justify">
 <p>	
-The OpenEarthMap-SAR benchmark dataset was served as the official dataset for the <a href="https://www.grss-ieee.org/technical-committees/image-analysis-and-data-fusion/?tab=data-fusion-contest">2025 IEEE GRSS Data Fusion Contest Track 1</a> organized by the IEEE GRSS Image Analysis and Data Fusion Technical Committee, the University of Tokyo, RIKEN, and ETH Zurich. The contest aims to foster the development of innovative solutions for all-weather land cover and building damage mapping using multimodal SAR and optical EO data at submeter resolution. Check out the winners of the contest at <a href="https://www.grss-ieee.org/community/technical-committees/winners-of-the-2025-ieee-grss-data-fusion-contest-all-weather-land-cover-and-building-damage-mapping/">here</a>.
+The OpenEarthMap-SAR dataset was served as the official dataset for the <a href="https://www.grss-ieee.org/technical-committees/image-analysis-and-data-fusion/?tab=data-fusion-contest">2025 IEEE GRSS Data Fusion Contest Track 1</a> organized by the IEEE GRSS Image Analysis and Data Fusion Technical Committee, the University of Tokyo, RIKEN, and ETH Zurich. The contest aims to foster the development of innovative solutions for all-weather land cover and building damage mapping using multimodal SAR and optical EO data at submeter resolution. Check out the winners of the contest at <a href="https://www.grss-ieee.org/community/technical-committees/winners-of-the-2025-ieee-grss-data-fusion-contest-all-weather-land-cover-and-building-damage-mapping/">here</a>.
 </p>
-</div>
+</div> -->
 
 ## Baseline Models
 <div align="justify">
-<p>The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/138jNYpgIey8uNOVLoW6p9dA1A5dhr8_K?usp=drive_link">here</a>.</p>
+<p>The baseline models for three different tasks (semantic segmentation, UDA, and image translation) on the OpenEarthMap-SAR benchmark dataset are provided as follows.</p>
 
 ### Semantic Segmentation
+<p>Yon can download all the pre-trained basleine models for the semantic segmentation task from <a href="https://drive.google.com/drive/folders/138jNYpgIey8uNOVLoW6p9dA1A5dhr8_K?usp=drive_link">here</a>.</p>
 <table align="center">
     <!-- U-Net Optical -->
     <tr align="center">
@@ -95,21 +99,14 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
 	    <td> 60.16 </td> 
 	    <td> <a href="https://drive.google.com/file/d/1raL8qVwSSraqYBcvHO06yHHpw-vCkD_a/view?usp=drive_link">Download</a> </td> 
     </tr>
-    <!-- <tr align="left">
-        <td colspan=5>
-        <b>Acknowledgement:</b>
-        The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
-        </td> 
-    </tr> -->
 </table>
-<b>Acknowledgement:</b> The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
+<b>Acknowledgement:</b> The code for the <a href="https://arxiv.org/abs/1505.04597">U-Net</a> with <a href="https://arxiv.org/abs/1905.11946">EfficientNet-B4</a> is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
 <p>&nbsp;</p>
 
 
 ### UDA Semantic Segmentation
-<p>The  pretrianed models for country-wise UDA with France as the source domain.
-The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/138jNYpgIey8uNOVLoW6p9dA1A5dhr8_K?usp=drive_link">here</a>.
-</p>
+<p>Country-wise UDA task with France as the source domain and Japan and USA as target domains. 
+Yon can download all the pre-trained basleine models for the UDA semantic segmentation task from <a href="https://drive.google.com/drive/folders/10LB26t1yw6T1uFPMwQBsRc5oUjWbAYJ4?usp=drive_link">here</a>.</p>
 <table align="center">
     <tr align="center">
         <th>Method</th>
@@ -192,22 +189,13 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> 39.97 </td> 
 	    <td> <a href="https://drive.google.com/file/d/1LGqMu7NRTiSojKvWfiFLKJfQXEfirZf5/view?usp=drive_link">Download</a> </td> 
     </tr>
-    <!--  -->
-    <!-- <tr align="left">
-        <td colspan=8>
-        <b>Acknowledgement:</b>
-        The code for the UDA baseline is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
-        </td> 
-    </tr> -->
 </table>
-<b>Acknowledgement:</b> The code for the UDA baseline is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
+<b>Acknowledgement:</b> The code for the UDA semantic segmentation task is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
 <p>&nbsp;</p>
 
 
 ### Image Translation
-<p>The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/1TQIglCWyOOEMLf9pwYHVoetffaCvnwmw?usp=drive_link">here</a>.
-BicycleGAN [75], CycleGAN [76], NICE-GAN [77], CUT [78], UNSB [79], and Decent [80]
-</p>
+<p>Yon can download all the pre-trained basleine models for the image translation task from <a href="https://drive.google.com/drive/folders/1TQIglCWyOOEMLf9pwYHVoetffaCvnwmw?usp=drive_link">here</a>.</p>
 <table align="center">
     <tr align="center">
         <th>Method</th>
@@ -265,14 +253,8 @@ BicycleGAN [75], CycleGAN [76], NICE-GAN [77], CUT [78], UNSB [79], and Decent [
 	    <td> 0.0292 </td> 
 	    <td> <a href="https://drive.google.com/drive/folders/1pbUq3zFyCXDKsvW4rWYsLi4ctLZ6pn9I?usp=drive_link">Download</a> </td> 
     </tr>
-    <!--  -->
-    <!-- <tr align="left"> 
-        <td colspan=8><b>Acknowledgement:</b>
-        The code for the UDA baseline is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
-        </td> 
-    </tr> -->
 </table>
-<b>Acknowledgement:</b> The code for the UDA baseline is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
+<b>Acknowledgement:</b> The code for the image translation task is borrowed from the <a href="https://github.com/taesungp/contrastive-unpaired-translation">Contrastive Unpaired Translation (CUT)</a>. Thanks to the authors for making their code publically available.
 <p>&nbsp;</p>
 
 <!-- with different SSL methods are provided as follows (13 bands of S2-L1C, 100 epochs, input clip to [0,1] by dividing 10000).
