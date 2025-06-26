@@ -273,22 +273,6 @@ The weighted mIoUs are calculated using `0.4:0.6 => base:novel`. These weights a
 
 </div>
 
-## Usage
-<div align="justify">
-
-<!-- The repository consists of: a configuration file that can be found in `config/`; data splits for each set in `data/`; and  all the codes for the GFSS task are in `src/`. The testing script `test.sh` is at the root of the repo.
-The `docs` folder contains only GitHub page files.
-
-To use the baseline code, you first need to clone the repository and change your directory into the `OEM-Fewshot-Challenge` folder. Then follow the steps below:</br>
-1. Install all the requirements. `Python 3.9` was used in our experiments. Install the list of packages in the `requirements.txt` file using `pip install -r requirements.txt`.
-2. Download the dataset from [here](https://zenodo.org/records/10591939) into a directory that you set in the config file `oem.yaml`
-3. Download the pretrained weights from [here](https://drive.google.com/file/d/1eLjfUJ2ajAMkJKCsoJr-MGSSzZ-LqDbR/view?usp=sharing) into a directory that you set in the config file `oem.yaml`
-4. In the `oem.yaml` you need to set only the paths for the dataset and the pretrained weights. The other settings need not be changed to reproduce the results.
-5. Test the model by running the `test.sh` script as mentioned in the **Baseline** section. The script will use the *support_set* to adapt and predict the segmentation maps of the *query_set*. After running the script, the results are provided in a `results` folder which contains a `.txt` file of the IoUs and mIoUs, and a `preds` and `targets` folder for the predicted and the targets maps, respectively.
-
-You can pretrained your model using the *trainset* and any simple training scheme of your choice. The baseline paper used the [`train_base.py`](https://github.com/chunbolang/BAM/blob/main/train_base.py) script and base learner models of [BAM](https://github.com/chunbolang/BAM) (see the [baseline paper](https://github.com/sinahmr/DIaM?tab=readme-ov-file) for more info). -->
- 
-</div>
 
 <!-- Acknowledgement
 This code is heavily borrowed from MRF-UNet and DAFormer. Thanks to the authors for making their code publically available.
@@ -300,20 +284,19 @@ This work is licensed under the MIT License, however, please refer to the licenc
 <div align="justify">
 For any scientific publication using this data, the following paper should be cited:
 <pre style="white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
-@InProceedings{Xia_2023_WACV,
-    author    = {Xia, Junshi and Yokoya, Naoto and Adriano, Bruno and Broni-Bediako, Clifford},
-    title     = {OpenEarthMap: A Benchmark Dataset for Global High-Resolution Land Cover Mapping},
-    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-    month     = {January},
-    year      = {2023},
-    pages     = {6254-6264}
+@article{xia2025openearthmap,
+  title   = {OpenEarthMap-SAR: A Benchmark Synthetic Aperture Radar Dataset for Global High-Resolution Land Cover Mapping},
+  author  = {Xia, Junshi and Chen, Hongruixuan and Broni-Bediako, Clifford and Wei, Yimin and Song, Jian and Yokoya, Naoto},
+  journal = {arXiv preprint arXiv:2501.10891},
+  year    = {2025}
 }
 </pre>
 </div>
 
-<!-- ## Acknowledgements
+
+## Acknowledgements
 <div align="justify">
 
 We are most grateful to the authors of [DIaM](https://github.com/sinahmr/DIaM?tab=readme-ov-file), [Semantic Segmentation PyTorch](https://github.com/qubvel/segmentation_models.pytorch?tab=readme-ov-file), 
 and [Catalyst](https://catalyst-team.com/) from which the baseline code is built on.
-</div> -->
+</div>

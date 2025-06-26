@@ -1,0 +1,2 @@
+================ Training Loss (Thu Dec 12 04:01:25 2024) ================
+(epoch: 1, iters: 100, time: 0.319, data: 0.044) G_GAN: 0.323 D_real: 0.241 D_fake: 0.269 G: 5.397 NCE: 4.766 SB: 0.043 NCE_Y: 5.296 

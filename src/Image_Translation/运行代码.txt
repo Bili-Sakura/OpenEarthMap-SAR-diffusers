@@ -1,0 +1,47 @@
+CUT：
+python3 train.py --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/CUT/datasets/seman2sar --name seman2sar_CUT --CUT_mode CUT
+
+python3 test.py --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/CUT/datasets/seman2opt2 --name seman2opt2_CUT --model cut
+
+python3 test.py --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/CUT/datasets/seman2sar1 --name seman2sar1_CUT --model cut
+
+CycleGAN:
+
+python3 train.py --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/CUT/datasets/sar2opt --name sar2opt_cyclegan --model cycle_gan
+
+python3 test.py --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/CUT/datasets/sar2opt --name sar2opt_cyclegan --model cycle_gan
+
+NICE-GAN:
+
+python3 main.py
+
+python3 main.py --dataset seman2opt2 --phase test
+
+python3 main.py --dataset seman2sar
+
+BicycleGAN:
+
+python3 train.py --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/BicycleGAN/datasets/combined_opt-sar2o --name opt2sar --model bicycle_gan --direction AtoB
+
+python3 test.py --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/BicycleGAN/datasets/combined_opt-seman2 --name seman2opt2 --model bicycle_gan --direction AtoB
+
+python3 test.py --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/BicycleGAN/datasets/combined_opt-sar2o --name opt2sar --model bicycle_gan --direction AtoB
+
+UNSB:
+python train.py --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/CUT/datasets/opt2sar --name opt2sar_SB --mode sb --lambda_SB 1.0 --lambda_NCE 1.0 --gpu_ids 0 --direction B2A
+
+python test.py --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/CUT/datasets/sar2opt --name sar2o_SB --mode sb --phase test --epoch 35 --eval --num_test 477 --gpu_ids 0 --checkpoints_dir ./checkpoints
+
+python test.py --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/CUT/datasets/opt2sar --name opt2sar_SB --mode sb --phase test --epoch 105 --eval --num_test 477 --gpu_ids 0 --checkpoints_dir ./checkpoints
+
+Decent:
+
+python3 train.py --dataroot=D:/new_work/pytorch-pix2pix/SAR2Optnew/CUT/datasets/seman2sar 
+
+python3 test.py --dataroot=D:/new_work/pytorch-pix2pix/SAR2Optnew/CUT/datasets/opt2sar --num_test 477
+
+
+SPADE：
+python train.py --name opt2sar1 --dataset_mode custom --label_dir D:/new_work/pytorch-pix2pix/SAR2Optnew/SPADE/opt2sar/testB --image_dir D:/new_work/pytorch-pix2pix/SAR2Optnew/SPADE/opt2sar/testA --label_nc 10 --no_instance  --contain_dontcare_label
+
+python3 test.py --name opt2sar1 --dataset_mode custom --dataroot D:/new_work/pytorch-pix2pix/SAR2Optnew/SPADE/seman2sar1/testA --results_dir ./result --how_many 600

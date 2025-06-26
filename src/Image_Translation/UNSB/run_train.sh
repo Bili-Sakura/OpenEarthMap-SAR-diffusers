@@ -1,0 +1,1 @@
+python train.py --dataroot D:/new_work/BBDM/UNSB/datasets/horse2zebra --name h2z_SB --mode sb --lambda_SB 1.0 --lambda_NCE 1.0 --gpu_ids 0

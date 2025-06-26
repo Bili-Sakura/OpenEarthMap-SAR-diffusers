@@ -1,0 +1,1 @@
+python train.py --dataroot ./datasets/sar2opt --name sar2opt_CUT --CUT_mode CUT
