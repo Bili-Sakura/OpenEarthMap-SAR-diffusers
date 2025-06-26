@@ -120,49 +120,43 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
 </table>
 
 #### UDA Semantic Segmentation
-<p>The <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Hoyer_DAFormer_Improving_Network_Architectures_and_Training_Strategies_for_Domain-Adaptive_Semantic_CVPR_2022_paper.pdf">DAFormer</a> pretrianed models for country-wise UDA with France as the source domain.
+<p>The  pretrianed models for country-wise UDA with France as the source domain.
 
 The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/138jNYpgIey8uNOVLoW6p9dA1A5dhr8_K?usp=drive_link">here</a>.
 </p>
 <table align="center">
-    <!-- Optical -->
     <tr align="center">
-        <!-- <th>Method</th> -->
+        <th>Method</th>
         <th>Modality</th> 
         <th>UDA Setup</th> 
 	    <th>Labelling Scenario</th> 
 	    <th>mIoU</th>
         <th>Pretrained</th> 
     </tr>
-    <!--  -->
+    <!-- Optical -->
     <tr align="center">
-        <!-- <td rowspan="18">UNet</td> -->
+        <td rowspan="12"><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Hoyer_DAFormer_Improving_Network_Architectures_and_Training_Strategies_for_Domain-Adaptive_Semantic_CVPR_2022_paper.pdf">DAFormer</a></td>
         <td rowspan="4"> Optical </td> 
 	    <td align="left" rowspan="2"> France-to-USA </td> 
 	    <td align="left"> Pseudo labels</td> 
 	    <td> 39.38 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1YLgYgTPcsnrsfh7OF0z1jjcETsfve-S5/view?usp=drive_link">Download</a> </td> 
     </tr>
     <tr align="center">
-        <!-- <td align="left"> France-to-USA </td>  -->
-        <!-- <td> Optical </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 39.60 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1Ya8xiaFNbw7zh2SgHMHRxy4CKGf4vSCI/view?usp=drive_link">Download</a> </td> 
     </tr>
     <tr align="center">
 	    <td align="left" rowspan="2"> France-to-Japan </td> 
-        <!-- <td rowspan="2"> Optical </td>  -->
 	    <td align="left"> Pseudo labels</td> 
 	    <td> 44.35 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1aiGa2yQ4EmalVFRpvaPEXdq4DqkjjIOP/view?usp=drive_link">Download</a> </td> 
     </tr>
     <tr align="center">
-        <!-- <td align="left"> France-to-Japan </td>  -->
-        <!-- <td> Optical </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 43.74 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1uSkQgX_2SHwzESSyxZ1KlA_NAbrqFtsq/view?usp=drive_link">Download</a> </td> 
     </tr>
     <!-- SAR -->
    <tr align="center">
@@ -170,28 +164,23 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td align="left" rowspan="2"> France-to-USA </td> 
 	    <td align="left"> Pseudo labels</td> 
 	    <td> 19.35 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1757Jxecp5SVaXuYNMK0zYqfmjQE73Inr/view?usp=drive_link">Download</a> </td> 
     </tr>
     <tr align="center">
-        <!-- <td align="left"> France-to-USA </td>  -->
-        <!-- <td> SAR </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 21.26 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1OGX4xhr32gzuAYmZt8rlMipmnbk6LXVS/view?usp=drive_link">Download</a> </td> 
     </tr>
     <tr align="center">
 	    <td align="left" rowspan="2"> France-to-Japan </td> 
-        <!-- <td rowspan="2"> SAR </td>  -->
 	    <td align="left"> Pseudo labels</td> 
 	    <td> 13.49 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1GkYX7zVCcmfmF7liWTCFIuJ50XoHO_a6/view?usp=drive_link">Download</a> </td> 
     </tr>
     <tr align="center">
-        <!-- <td align="left"> France-to-Japan </td>  -->
-        <!-- <td> SAR </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 12.50 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1Sc5HWtYDCZpWvcre8W0Tm-IufZLaAri4/view?usp=drive_link">Download</a> </td> 
     </tr>
     <!-- Optical+SAR -->
     <tr align="center">
@@ -199,28 +188,23 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td align="left" rowspan="2"> France-to-USA </td> 
 	    <td align="left"> Pseudo labels</td> 
 	    <td> 40.45 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1xluCoIT-pMGR4AgmK0tMZIjGdj4YfWXi/view?usp=drive_link">Download</a> </td> 
     </tr>
     <tr align="center">
-        <!-- <td align="left"> France-to-USA </td>  -->
-        <!-- <td> Optical + SAR </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 37.21 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1LRUQrMuzXbksluw1DFGVJy2kXSPYcwbB/view?usp=drive_link">Download</a> </td> 
     </tr>
     <tr align="center">
 	    <td align="left" rowspan="2"> France-to-Japan </td> 
-        <!-- <td rowspan="2">SAR + Optical</td>  -->
 	    <td align="left"> Pseudo labels</td> 
 	    <td> 40.03 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1MyZ7tMjy4NaDm3IAfKoJuOD8Ch4VitU9/view?usp=drive_link">Download</a> </td> 
     </tr>
     <tr align="center">
-        <!-- <td align="left"> France-to-Japan </td>  -->
-        <!-- <td> Optical + SAR </td>  -->
 	    <td align="left"> Pseudo labels + 5 real labels per region</td> 
 	    <td> 39.97 </td> 
-	    <td> <a href="">Download</a> </td> 
+	    <td> <a href="https://drive.google.com/file/d/1LGqMu7NRTiSojKvWfiFLKJfQXEfirZf5/view?usp=drive_link">Download</a> </td> 
     </tr>
     <!--  -->
     <tr align="left">
@@ -236,7 +220,6 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 BicycleGAN [75], CycleGAN [76], NICE-GAN [77], CUT [78], UNSB [79], and Decent [80]
 </p>
 <table align="center">
-    <!-- Optical -->
     <tr align="center">
         <th>Method</th>
         <th>Task</th> 
@@ -248,7 +231,7 @@ BicycleGAN [75], CycleGAN [76], NICE-GAN [77], CUT [78], UNSB [79], and Decent [
     </tr>
     <!--  -->
     <tr align="center">
-        <td rowspan="6">CUT</td>
+        <td rowspan="6"><a href="https://arxiv.org/abs/2007.15651">CUT</a></td>
 	    <td rowspan="3" align="left"> RGB Generation </td> 
         <td align="left"> Pseudo Semantic2RGB </td> 
 	    <td align="left"> Pseudo Semantic Map</td> 
@@ -272,7 +255,6 @@ BicycleGAN [75], CycleGAN [76], NICE-GAN [77], CUT [78], UNSB [79], and Decent [
     </tr>
     <!--  -->
        <tr align="center">
-        <!-- <td rowspan="6">CUT</td> -->
 	    <td rowspan="3" align="left"> SAR Generation </td> 
         <td align="left"> Pseudo Semantic2SAR </td> 
 	    <td align="left"> Pseudo Semantic Map</td> 
