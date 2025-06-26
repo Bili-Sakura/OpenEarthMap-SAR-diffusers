@@ -97,11 +97,13 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
     </tr>
     <tr align="left" cellpadding="0">
         <td colspan=5>
-        <b>Acknowledgement:</b>
-        The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
+        <!-- <b>Acknowledgement:</b>
+        The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available. -->
         </td> 
     </tr>
 </table>
+<b>Acknowledgement:</b>
+The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
 
 #### UDA Semantic Segmentation
 <p>The  pretrianed models for country-wise UDA with France as the source domain.
