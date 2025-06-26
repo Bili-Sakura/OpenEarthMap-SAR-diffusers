@@ -94,7 +94,7 @@ The OpenEarthMap-SAR dataset consists of 1.5 million segments of 5033 aerial and
 	    <td> <a href="https://drive.google.com/file/d/1raL8qVwSSraqYBcvHO06yHHpw-vCkD_a/view?usp=drive_link">Download</a> </td> 
     </tr>
 </table>
-The code for the <a href="https://arxiv.org/abs/1505.04597">U-Net</a> with <a href="https://arxiv.org/abs/1905.11946">EfficientNet-B4</a> is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
+The code for the <a href="https://arxiv.org/abs/1505.04597">U-Net</a> with <a href="https://arxiv.org/abs/1905.11946">EfficientNet-B4</a> is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publicly available.
 <p>&nbsp;</p>
 
 
@@ -184,7 +184,7 @@ Yon can download all the pre-trained basleine models for the UDA semantic segmen
 	    <td> <a href="https://drive.google.com/file/d/1LGqMu7NRTiSojKvWfiFLKJfQXEfirZf5/view?usp=drive_link">Download</a> </td> 
     </tr>
 </table>
-The code for the UDA semantic segmentation task is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
+The code for the UDA semantic segmentation task is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publicly available.
 <p>&nbsp;</p>
 
 
@@ -248,13 +248,13 @@ The code for the UDA semantic segmentation task is borrowed from the <a href="ht
 	    <td> <a href="https://drive.google.com/drive/folders/1pbUq3zFyCXDKsvW4rWYsLi4ctLZ6pn9I?usp=drive_link">Download</a> </td> 
     </tr>
 </table>
-<b>The code for the image translation task is borrowed from the <a href="https://github.com/taesungp/contrastive-unpaired-translation">Contrastive Unpaired Translation (CUT)</a>. Thanks to the authors for making their code publically available.
+The code for the image translation task is borrowed from the <a href="https://github.com/taesungp/contrastive-unpaired-translation">Contrastive Unpaired Translation (CUT)</a>. Thanks to the authors for making their code publicly available.
 <p>&nbsp;</p>
 
 
 ## Citation
 <div align="justify">
-<p>For any scientific publication using this data, the following paper should be cited:</p>
+For any scientific publication using this data, the following paper should be cited:
 <pre style="white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">
 @article{xia2025openearthmap,
   title   = {OpenEarthMap-SAR: A Benchmark Synthetic Aperture Radar Dataset for Global High-Resolution Land Cover Mapping},
@@ -268,7 +268,7 @@ The code for the UDA semantic segmentation task is borrowed from the <a href="ht
 
 ## Acknowledgements
 <div align="justify">
-<p>We are most grateful to the authors of the following works for making their source codes publicly available:</p>
+We are most grateful to the authors of the following works for making their source codes publicly available:
 <ul>
     <li><a href="https://github.com/qubvel/segmentation_models.pytorch?tab=readme-ov-file">Semantic Segmentation PyTorch</a></li>
     <li><a href="https://github.com/lhoyer/DAFormer">DAFormer</a></li>
