@@ -7,7 +7,6 @@ The <a href="https://arxiv.org/abs/2501.10891v2">OpenEarthMap Synthetic Aperture
 <p>	
 The OpenEarthMap-SAR dataset was served as the official dataset for the <a href="https://www.grss-ieee.org/technical-committees/image-analysis-and-data-fusion/?tab=data-fusion-contest">2025 IEEE GRSS Data Fusion Contest Track 1</a> organized by the IEEE GRSS Image Analysis and Data Fusion Technical Committee, the University of Tokyo, RIKEN, and ETH Zurich. The contest aims to foster the development of innovative solutions for all-weather land cover and building damage mapping using multimodal SAR and optical EO data at submeter resolution. Check out the winners of the contest at <a href="https://www.grss-ieee.org/community/technical-committees/winners-of-the-2025-ieee-grss-data-fusion-contest-all-weather-land-cover-and-building-damage-mapping/">here</a>.
 </p>
-<!-- <p><img src="assets/OEM-SAR_Logo.jpg"></p> -->
 </div>
 
 <div align="center">
@@ -34,7 +33,7 @@ The OpenEarthMap-SAR dataset consists of 1.5 million segments of 5033 aerial and
 ### Semantic Segmentation
 <p>Yon can download all the pre-trained basleine models for the semantic segmentation task from <a href="https://drive.google.com/drive/folders/138jNYpgIey8uNOVLoW6p9dA1A5dhr8_K?usp=drive_link">here</a>.</p>
 <table align="center">
-    <!-- U-Net Optical -->
+    <!-- Optical -->
     <tr align="center">
         <th>Method</th>
         <th>Modality</th> 
@@ -59,7 +58,7 @@ The OpenEarthMap-SAR dataset consists of 1.5 million segments of 5033 aerial and
 	    <td> 65.10 </td> 
 	    <td> <a href="https://drive.google.com/file/d/16REK9OcnhzrUte68hnBj7SJCqLpt1c_U/view?usp=drive_link">Download</a> </td> 
     </tr>
-    <!-- U-Net SAR -->
+    <!-- SAR -->
     <tr align="center">
         <td rowspan="3"> SAR </td> 
 	    <td align="left"> Pseudo labels</td> 
@@ -76,7 +75,7 @@ The OpenEarthMap-SAR dataset consists of 1.5 million segments of 5033 aerial and
 	    <td> 33.86 </td> 
 	    <td> <a href="https://drive.google.com/file/d/1Iy_VE6LpoUfOuLFM8V54WTmSSKBOKNwm/view?usp=drive_link">Download</a> </td> 
     </tr>
-    <!-- U-Net Optical+SAR -->
+    <!-- SAR+Optical -->
     <tr align="center">
         <td rowspan="3">SAR + Optical</td> 
 	    <td align="left">Pseudo labels</td> 
@@ -159,7 +158,7 @@ Yon can download all the pre-trained basleine models for the UDA semantic segmen
 	    <td> 12.50 </td> 
 	    <td> <a href="https://drive.google.com/file/d/1Sc5HWtYDCZpWvcre8W0Tm-IufZLaAri4/view?usp=drive_link">Download</a> </td> 
     </tr>
-    <!-- Optical+SAR -->
+    <!-- SAR+Optical -->
     <tr align="center">
         <td rowspan="4">SAR + Optical</td> 
 	    <td align="left" rowspan="2"> France-to-USA </td> 
@@ -200,7 +199,7 @@ The code for the UDA semantic segmentation task is borrowed from the <a href="ht
 	    <th>SSIM</th>
         <th>Pretrained</th> 
     </tr>
-    <!--  -->
+    <!-- SAR2RGB -->
     <tr align="center">
         <td rowspan="6"><a href="https://arxiv.org/abs/2007.15651">CUT</a></td>
 	    <td rowspan="3" align="left"> RGB Generation </td> 
@@ -224,7 +223,7 @@ The code for the UDA semantic segmentation task is borrowed from the <a href="ht
 	    <td> 0.1075 </td> 
 	    <td> <a href="https://drive.google.com/drive/folders/1fsABom2c4lwflLdrVXLp6cUcIV9vZvW7?usp=drive_link">Download</a> </td> 
     </tr>
-    <!--  -->
+    <!-- RGB2SAR -->
        <tr align="center">
 	    <td rowspan="3" align="left"> SAR Generation </td> 
         <td align="left"> Pseudo Semantic2SAR </td> 
