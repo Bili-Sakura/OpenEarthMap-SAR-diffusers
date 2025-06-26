@@ -34,7 +34,7 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
 <div align="justify">
 <p>The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/138jNYpgIey8uNOVLoW6p9dA1A5dhr8_K?usp=drive_link">here</a>.</p>
 
-#### Semantic Segmentation
+### Semantic Segmentation
 <table align="center">
     <!-- U-Net Optical -->
     <tr align="center">
@@ -103,11 +103,11 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
     </tr> -->
 </table>
 <b>Acknowledgement:</b> The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
-
 <p>&nbsp;</p>
-#### UDA Semantic Segmentation
-<p>The  pretrianed models for country-wise UDA with France as the source domain.
 
+
+### UDA Semantic Segmentation
+<p>The  pretrianed models for country-wise UDA with France as the source domain.
 The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/138jNYpgIey8uNOVLoW6p9dA1A5dhr8_K?usp=drive_link">here</a>.
 </p>
 <table align="center">
@@ -204,7 +204,7 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 <p>&nbsp;</p>
 
 
-#### Image Translation
+### Image Translation
 <p>The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/1TQIglCWyOOEMLf9pwYHVoetffaCvnwmw?usp=drive_link">here</a>.
 BicycleGAN [75], CycleGAN [76], NICE-GAN [77], CUT [78], UNSB [79], and Decent [80]
 </p>
