@@ -95,16 +95,16 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
 	    <td> 60.16 </td> 
 	    <td> <a href="https://drive.google.com/file/d/1raL8qVwSSraqYBcvHO06yHHpw-vCkD_a/view?usp=drive_link">Download</a> </td> 
     </tr>
-    <tr align="left" cellpadding="0">
+    <!-- <tr align="left">
         <td colspan=5>
-        <!-- <b>Acknowledgement:</b>
-        The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available. -->
+        <b>Acknowledgement:</b>
+        The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
         </td> 
-    </tr>
+    </tr> -->
 </table>
-<b>Acknowledgement:</b>
-The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
+<b>Acknowledgement:</b> The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
 
+<p>&nbsp;</p>
 #### UDA Semantic Segmentation
 <p>The  pretrianed models for country-wise UDA with France as the source domain.
 
@@ -193,13 +193,16 @@ The baseline models for three different tasks on the OpenEarthMap-SAR benchmark 
 	    <td> <a href="https://drive.google.com/file/d/1LGqMu7NRTiSojKvWfiFLKJfQXEfirZf5/view?usp=drive_link">Download</a> </td> 
     </tr>
     <!--  -->
-    <tr align="left">
+    <!-- <tr align="left">
         <td colspan=8>
         <b>Acknowledgement:</b>
         The code for the UDA baseline is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
         </td> 
-    </tr>
+    </tr> -->
 </table>
+<b>Acknowledgement:</b> The code for the UDA baseline is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
+<p>&nbsp;</p>
+
 
 #### Image Translation
 <p>The baseline models for three different tasks on the OpenEarthMap-SAR benchmark dataset are provided as follows. Yon can download all the pre-trained parameters of the basleine models from <a href="https://drive.google.com/drive/folders/1TQIglCWyOOEMLf9pwYHVoetffaCvnwmw?usp=drive_link">here</a>.
@@ -263,13 +266,14 @@ BicycleGAN [75], CycleGAN [76], NICE-GAN [77], CUT [78], UNSB [79], and Decent [
 	    <td> <a href="https://drive.google.com/drive/folders/1pbUq3zFyCXDKsvW4rWYsLi4ctLZ6pn9I?usp=drive_link">Download</a> </td> 
     </tr>
     <!--  -->
-    <tr align="left"> 
+    <!-- <tr align="left"> 
         <td colspan=8><b>Acknowledgement:</b>
         The code for the UDA baseline is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
         </td> 
-    </tr>
+    </tr> -->
 </table>
-
+<b>Acknowledgement:</b> The code for the UDA baseline is borrowed from the <a href="https://github.com/lhoyer/DAFormer">DAFormer</a>. Thanks to the authors for making their code publically available.
+<p>&nbsp;</p>
 
 <!-- with different SSL methods are provided as follows (13 bands of S2-L1C, 100 epochs, input clip to [0,1] by dividing 10000).
 
