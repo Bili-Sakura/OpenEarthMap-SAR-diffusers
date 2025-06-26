@@ -95,7 +95,7 @@ The OpenEarthMap-SAR benchmark dataset was served as the official dataset for th
 	    <td> 60.16 </td> 
 	    <td> <a href="https://drive.google.com/file/d/1raL8qVwSSraqYBcvHO06yHHpw-vCkD_a/view?usp=drive_link">Download</a> </td> 
     </tr>
-    <tr align="left">
+    <tr align="left" cellpadding="0">
         <td colspan=5>
         <b>Acknowledgement:</b>
         The code for the U-Net with EfficientNet-B4 is borrowed from the <a href="https://github.com/qubvel-org/segmentation_models.pytorch">Segmentation Models Pytorch</a>. Thanks to the authors for making their code publically available.
