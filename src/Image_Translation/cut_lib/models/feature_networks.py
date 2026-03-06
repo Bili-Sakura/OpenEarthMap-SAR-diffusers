@@ -99,7 +99,7 @@ class PatchSampleMLP(nn.Module):
             self._create_mlps(feats)
 
         for feat_id, feat in enumerate(feats):
-            B, _C, H, W = feat.shape
+            batch, _channels, height, width = feat.shape
             feat_reshape = feat.permute(0, 2, 3, 1).flatten(1, 2)  # [B, H*W, C]
 
             if num_patches > 0:
@@ -121,7 +121,7 @@ class PatchSampleMLP(nn.Module):
             x_sample = self.l2norm(x_sample)
 
             if num_patches == 0:
-                x_sample = x_sample.permute(0, 2, 1).reshape(B, x_sample.shape[-1], H, W)
+                x_sample = x_sample.permute(0, 2, 1).reshape(batch, x_sample.shape[-1], height, width)
 
             return_feats.append(x_sample)
 

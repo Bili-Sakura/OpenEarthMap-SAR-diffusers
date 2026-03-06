@@ -43,24 +43,24 @@ class PatchNCELoss(nn.Module):
         -------
         Per-sample NCE loss tensor.
         """
-        batchSize = feat_q.shape[0]
+        num_samples = feat_q.shape[0]
         dim = feat_q.shape[1]
         feat_k = feat_k.detach()
 
         # Positive logits
-        l_pos = torch.bmm(feat_q.view(batchSize, 1, -1), feat_k.view(batchSize, -1, 1))
-        l_pos = l_pos.view(batchSize, 1)
+        l_pos = torch.bmm(feat_q.view(num_samples, 1, -1), feat_k.view(num_samples, -1, 1))
+        l_pos = l_pos.view(num_samples, 1)
 
         # Negative logits — within current batch
         feat_q = feat_q.view(self.batch_size, -1, dim)
         feat_k = feat_k.view(self.batch_size, -1, dim)
-        npatches = feat_q.size(1)
+        n_patches = feat_q.size(1)
         l_neg_curbatch = torch.bmm(feat_q, feat_k.transpose(2, 1))
 
         # Mask out diagonal (same-patch similarity is meaningless)
-        diagonal = torch.eye(npatches, device=feat_q.device, dtype=torch.bool)[None, :, :]
+        diagonal = torch.eye(n_patches, device=feat_q.device, dtype=torch.bool)[None, :, :]
         l_neg_curbatch.masked_fill_(diagonal, -10.0)
-        l_neg = l_neg_curbatch.view(-1, npatches)
+        l_neg = l_neg_curbatch.view(-1, n_patches)
 
         out = torch.cat((l_pos, l_neg), dim=1) / self.temperature
 
